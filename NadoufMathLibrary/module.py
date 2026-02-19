@@ -14,7 +14,7 @@ def difference_of(*args):
         return 0
     first = args[0]
     return first - sum(args[1:])
-def devision_of(*args):
+def division_of(*args):
         if not args:
             return 0
         result = args[0]
@@ -23,7 +23,7 @@ def devision_of(*args):
                 raise ValueError("You can't divide by zero!")
             result /= num
         return result
-def int_devision_of(*args):
+def int_division_of(*args):
             if not args:
                 return 0
     
@@ -107,7 +107,7 @@ class Nadoufmath:
         return self.number + sum(args)
     def difference_of(self, *args):
         return self.number - sum(args)
-    def devision_of(self, *args):
+    def division_of(self, *args):
         if not args:
             return self.number
         result = self.number
@@ -116,7 +116,7 @@ class Nadoufmath:
                 raise ValueError("You can't divide by zero!")
             result /= num
         return result
-    def int_devision_of(self, *args):
+    def int_division_of(self, *args):
             if not args:
                 return self.number
     

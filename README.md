@@ -30,7 +30,7 @@ calc = NadoufMath(5)
 
 print(f"Sum: {calc.sum_of(11, 12, 13, 14, 15)}")        # 5 + (11 + 12 + 13 + 14 + 15) = 70
 print(f"Difference: {calc.difference_of(3, 2, 1)}")     # 5 - 3 - 2 - 1 = -1
-print(f"square: {calc.square()}")                       # 5² = 25
+print(f"Square: {calc.square()}")                       # 5² = 25
 print(f"Cube: {calc.cube()}")                           # 5³ = 125
 print(f"Power 4: {calc.power(4)}")                      # 5⁴ = 625
 print(f"Square root: {calc.square_root()}")             # √5               
@@ -42,7 +42,7 @@ print(f"Square root: {calc.square_root()}")             # √5
 
 ## 1. Simple mathematical operations
 
-For sum of numbers you can use function sum_of or method sum_of for your object:
+For sum of numbers you can use function **sum_of** or **method sum_of** for your object:
 ```python
 from NadoufMath import *
 
@@ -55,7 +55,7 @@ print(number.sum_of(6)) # if you want to use the method. it will print 11 too
 
 
 
-For difference of numbers you can use fucntion difference_of or method difference_of for your object:
+For difference of numbers you can use fucntion **difference_of** or **method difference_of** for your object:
 ```python
 from NadoufMath import *
 
@@ -68,12 +68,12 @@ print(number.difference_of(3)) # if you want to use the method. it will print 7 
 
 
 
-For devision of numbers you can use functon devision_of or method difference_of for your object:
+For division of numbers you can use functon **division_of** or **method division_of** for your object:
 ```python
 from NadoufMath import *
 
-print(devision_of(5, 5)) # if you want to use function. it will print 1
+print(division_of(5, 5)) # if you want to use function. it will print 1
 
 number = Nadoufmath(5)
-print(number.devision_of(5)) # if you want to use the method. it will print 1 too
+print(number.division_of(5)) # if you want to use the method. it will print 1 too
 ```
