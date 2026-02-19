@@ -12,10 +12,10 @@
 
 A simple Python library for mathematical operations. In NadoufMath you can choose what you want - use functions or objects with methods!
 
-## Installing
+## Installing THE LIBRARY IS STILL UNDER DEVELOPMENT
 
 ```bash
-pip install nadouf-math
+The library is still under development
 ```
 
 ## Fast start
