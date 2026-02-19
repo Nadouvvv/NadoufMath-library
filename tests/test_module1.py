@@ -1,4 +1,4 @@
-from NadoufMathLibrary import Nadoufmath
+from NadoufMath import Nadoufmath
 
 
 number = Nadoufmath(5)
