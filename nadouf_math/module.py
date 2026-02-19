@@ -1,5 +1,16 @@
 import math
 
+
+
+__all__ = [
+    'Nadoufmath', 'number_pi', 'number_e', 'sum_of', 'division_of', 
+    'int_division_of', 'multiply_of', 'square', 'cube', 'power', 
+    'power_of_2', 'square_root', 'cube_root', 'factorial', 'gcd_with', 
+    'lcm_with', 'floor', 'is_infinity', 'is_positive', 'is_negative', 
+    'sign', 'is_even', 'is_odd', 'cos', 'sin', 'tan', 'is_pi'
+]
+
+
 number_pi = math.pi
 number_e = math.e
 
@@ -94,7 +105,7 @@ def sin(number):
         return math.sin(number)
 def tan(number):
         return math.tan(number)
-def pi(number):
+def is_pi(number):
         return number == math.pi
 
 
@@ -189,5 +200,5 @@ class Nadoufmath:
         return math.sin(self.number)
     def tan(self):
         return math.tan(self.number)
-    def pi(self):
+    def is_pi(self):
         return self.number == math.pi
