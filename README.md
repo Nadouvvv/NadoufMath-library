@@ -16,9 +16,7 @@ A simple Python library for mathematical operations. In NadoufMath you can choos
 ## Installing 
 
 ```bash
-The library is still under development. 
-Installation via pip is not yet available.
-Stay tuned for updates!
+pip install nadouf-math
 ```
 
 ## Import

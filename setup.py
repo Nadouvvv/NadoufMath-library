@@ -6,12 +6,12 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setup(
     name="nadouf-math",
     version="0.1.0",
-    author="Nadouf",
+    author="Nadouvvv",
     author_email="nadoufmail@gmail.com",
     description="A simple Python library for mathematical operations",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/Nadouvvv/nadouf-math",
+    url="https://github.com/Nadouvvv/NadoufMath-library",
     packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
