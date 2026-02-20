@@ -2,13 +2,13 @@ import math
 
 
 
-__all__ = [
+__all__ = (
     'Nadoufmath', 'number_pi', 'number_e', 'sum_of', 'division_of', 
     'int_division_of', 'multiply_of', 'square', 'cube', 'power', 
     'power_of_2', 'square_root', 'cube_root', 'factorial', 'gcd_with', 
-    'lcm_with', 'floor', 'is_infinity', 'is_positive', 'is_negative', 
-    'sign', 'is_even', 'is_odd', 'cos', 'sin', 'tan', 'is_pi'
-]
+    'lcm_with', 'floor', 'ceil', 'is_infinity', 'is_positive', 'is_negative', 
+    'sign', 'is_even', 'is_odd', 'cos', 'sin', 'tan'
+)
 
 
 number_pi = 3.14159265359
@@ -102,8 +102,19 @@ def lcm_with(*args):
     return result
 
 def floor(number):
-    return number//1
+    if number >= 0:
+        return number // 1
+    else:
+        return -((-number) // 1) - (1 if number % 1 != 0 else 0)
 
+def ceil(number):
+    if number == int(number):
+        return int(number)
+    elif number > 0:
+        return int(number) + 1
+    else:
+        return int(number)
+    
 def is_infinity(number):
     return math.isinf(number)
 
@@ -152,8 +163,6 @@ def sin(number, terms=10):
 def tan(number, terms=10):
     return sin(number, terms) / cos(number, terms)
 
-def is_pi(number):
-    return number == number_pi
 
 
 # class 
@@ -249,6 +258,14 @@ class Nadoufmath:
         else:
             return -((-self.number) // 1) - (1 if self.number % 1 != 0 else 0)
     
+    def ceil(self):
+        if self.number == int(self.number):
+            return int(self.number)
+        elif self.number > 0:
+            return int(self.number) + 1
+        else:
+            return int(self.number)
+        
     def is_infinity(self):
         return math.isinf(self.number)
     
@@ -297,6 +314,4 @@ class Nadoufmath:
     def tan(self, terms=10):
         return self.sin(terms) / self.cos(terms)
 
-    def is_pi(self):
-        return self.number == number_pi
 
