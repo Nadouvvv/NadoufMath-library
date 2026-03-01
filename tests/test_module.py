@@ -13,7 +13,6 @@ from nadouf_math import (
 )
 
 class TestBasicOperations:
-    """Тесты базовых операций"""
     
     def test_sum(self):
         assert sum_of(2, 3) == 5
@@ -36,7 +35,6 @@ class TestBasicOperations:
         assert multiply_of(2, 3, 4) == 24
 
 class TestPowersAndRoots:
-    """Тесты степеней и корней"""
     
     def test_square(self):
         assert square(5) == 25
@@ -63,7 +61,6 @@ class TestPowersAndRoots:
         assert cube_root(125) == pytest.approx(5, rel=1e-10)
 
 class TestHigherMath:
-    """Тесты высшей математики"""
     
     def test_factorial(self):
         assert factorial(5) == 120
@@ -82,7 +79,6 @@ class TestHigherMath:
         assert lcm_with(3, 5) == 15
 
 class TestRounding:
-    """Тесты округления"""
     
     def test_floor(self):
         assert floor(5.9) == 5
@@ -97,7 +93,6 @@ class TestRounding:
         assert ceil(-3.8) == -3
 
 class TestNumberProperties:
-    """Тесты свойств чисел"""
     
     def test_is_positive(self):
         assert is_positive(5) is True
@@ -125,7 +120,6 @@ class TestNumberProperties:
         assert sign(0) == "Zero"
 
 class TestTrigonometry:
-    """Тесты тригонометрии (с небольшой погрешностью)"""
     
     def test_cos(self):
         assert cos(0) == pytest.approx(1, rel=1e-10)
@@ -142,44 +136,38 @@ class TestTrigonometry:
         assert tan(number_pi/4) == pytest.approx(1, rel=1e-5)
 
 class TestConstants:
-    """Тесты констант"""
-    
     
     def test_e(self):
         assert number_e == pytest.approx(2.718281828459)
 
 class TestNadoufmathClass:
-    """Тесты класса Nadoufmath"""
     
     def test_initialization(self):
         obj = Nadoufmath(5)
         assert obj.number == 5
     
     def test_methods(self):
-        # Тест для square
         obj = Nadoufmath(5)
         result = obj.square()
-        assert result == obj  # возвращает объект
+        assert result == obj 
         assert obj.number == 25
         
-        # Тест для cube
+
         obj = Nadoufmath(5)
         result = obj.cube()
         assert result == obj
         assert obj.number == 125
         
-        # Тест для power
         obj = Nadoufmath(5)
         result = obj.power(3)
         assert result == obj
-        assert obj.number == 125  # проверяем, что число изменилось
+        assert obj.number == 125  
     
     def test_chaining(self):
         """Тест последовательных операций"""
         obj = Nadoufmath(2)
-        result = obj.power(3).square()  # (2³)² = 8² = 64
-        # Обрати внимание: power возвращает число, а не объект!
-        # Это может быть багом или фичей
+        result = obj.power(3).square()  
+
     
     def test_trigonometry_methods(self):
         obj = Nadoufmath(0)
